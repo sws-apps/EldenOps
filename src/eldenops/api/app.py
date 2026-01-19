@@ -51,6 +51,7 @@ def create_app() -> FastAPI:
         CORSMiddleware,
         allow_origins=[
             "http://localhost:3000",  # Next.js dev server
+            "http://localhost:3005",  # Next.js dev server (alt port)
             "http://localhost:8000",  # API server
         ]
         if not settings.is_production
